@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form>
+    <p><label for="hateMode">Choose a hate type for highlighting:</label></p>
+    <p>
+        <select name="hateType" id="hateMode">
+            <option value="identity">identity attack</option>
+            <option value="insult">insult</option>
+            <option value="obscene">obscene</option>
+            <option value="severe">severe toxicity</option>
+            <option value="sexual">sexual explicit</option>
+            <option value="threat">threat</option>
+            <option value="toxicity" selected>toxicity</option>
+        </select>
+    </p>
+    <p>Choose the highlighting colors, depending on the categorization:</p>
+    <table>
+        <tr>
+            <td><label for="yes">True</label></td>
+            <td><input type="text" id="yes" name="yes"></td>
+        </tr>
+        <tr>
+            <td><label for="no">False</label></td>
+            <td><input type="text" id="no" name="no"></td>
+        </tr>
+        <tr>
+            <td><label for="maybe">Unsure</label></td>
+            <td><input type="text" id="maybe" name="maybe"></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <button type="reset" id="reset">Reset</button>
+                <button type="button" id="submit">Save</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<script src="popup.js"></script>
+</body>
+</html>
