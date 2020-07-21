@@ -65,6 +65,6 @@ chrome.contextMenus.create({
     id: "analyze-hate",
     title: "Analyze for hate",
     contexts: ["selection"]
-});
+}, () => chrome.runtime.lastError);
 
 chrome.contextMenus.onClicked.addListener(identifyText);

@@ -1,7 +1,9 @@
 # hateblock
 
-Do you want to find out if a text fragment you see on a website in your Chrome webbrowser is offensive in any way? This extension features a deep learning model running on your computer that can confirm or refute your gut feeling about a text being (severely) toxic, a threat, sexually explicit, obscene, an insult or an identity attack. That way, you can check if it is just your opinion or if the text is actually hateful.
+Do you want to find out if a text fragment you see on a website in your Chrome webbrowser is offensive in any way? This extension features a deep learning model running on your computer that can confirm or refute your gut feeling about a text being <i>(severely) toxic, a threat, sexually explicit, obscene, an insult or an identity attack</i>. That way, you can check if it is just your opinion or if the text is actually hateful.
 Apart from that, the purpose of this app is to experiment with <b>Tensorflow.js</b> so that every user can see what an in-built deep learning model based on a <b>Universal Sentence Encoder</b> is capable of doing without needing to understand anything about AI. The classification works for <b>English</b> only and considers the <b>seven categories</b> mentioned above.
+
+![tutorial](images/tutorial.png)
 
 # How it works
 
@@ -9,6 +11,8 @@ Right-click on any text selection and choose "Analyze for hate". This will trigg
 After the inference finishes (might take up to a few seconds), the text is highlighted with a color, depending on whether the hate type or the lack thereof has been detected or the result has been inconclusive.
 <b>Hover over the marked text</b> to find out which of the seven categories have been detected, one of which is used for the purpose of color highlighting.
 The user can <b>customize</b> which of the seven criteria the model should use for analysis in the popup menu of the addon. Just click on the icon of the extension, choose the desired option from the dropdown menu and save your changes using the save button. This is where one can also customize the three colors used for highlighting.
+
+![prediction structure](images/structure.png)
 
 # Future work
 
