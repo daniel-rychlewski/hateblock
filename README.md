@@ -20,7 +20,7 @@ What is not addressed is cosmetic issues like what happens if you change your se
 
 # Related work
 
-Previous work used an approach based on filter lists like the [Hate Filter by Fram](https://chrome.google.com/webstore/detail/hate-filter-by-fram/njcigjppohkjhjkdejnehfbdpepkalcf).
+Previous work used an approach based on filter lists like the [Hate Filter by Fram](https://chrome.google.com/webstore/detail/hate-filter-by-fram/njcigjppohkjhjkdejnehfbdpepkalcf). Other software like [FakerFact](https://chrome.google.com/webstore/detail/fakerfact-fake-news-detec/hmcmekfmgfmilmmnicpmkfkccgnfegef) uses a REST API call for server-side machine learning inference.
 My initial idea was to develop an add-on that analyzes all text on a website, not displaying hateful content to the user in the first place, but while this method [works for text replacement](https://9to5google.com/2015/06/14/how-to-make-a-chrome-extensions/), it is too time and resource consuming for model inference of every text fragment on a website within the context of hate classification as I have found out.
 Perhaps one could use this approach for only certain DOM elements with relevant text fragments, using relevant DOM elements for different websites, e.g., DOM parts identifying tweet contents for Twitter and other parts for Facebook, but obviously, this approach would never cover all websites.
 Therefore, the happy medium I chose was for the user to select the content to be analyzed manually, although this does not allow the text not to be seen by the user in the first place if it turns out to be offensive.
